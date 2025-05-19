@@ -1,0 +1,275 @@
+section img {
+  width: 100%;
+  height: auto;
+}
+section {
+  padding: 0px;
+  margin: 0px;
+}
+
+nav ul li a:hover {
+  background: blue;
+  border-radius: 10px;
+}
+
+
+/* 
+Doctor start
+*/
+.card img {
+  height: 300px;
+}
+
+.modal .modal-body img {
+  height: 200px;
+}
+.card:hover .d-none {
+  display: block !important;
+}
+
+
+/* Page Hero */
+.page-hero {
+  background: linear-gradient(rgba(0, 123, 255, 0.9), rgba(0, 86, 179, 0.9)), 
+              url('../images/doctors-hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Doctor Cards */
+.doctor-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+}
+
+/* Department start */
+
+                /* Additional styles for doctor modal */
+
+                .department-container .card-body img {
+                  width: 100px;
+                  height: 100px;
+                  border-radius: 50%;
+                }
+                .doctor-modal-img {
+                  width: 200px;
+                  height: 100px;
+                  border-radius: 50%;
+                  border: 3px solid red;
+                  margin: 0 auto 1rem;
+                }
+
+                .doctor-badge {
+                  font-size: 0.8rem;
+                  margin-right: 0.5rem;
+                  margin-bottom: 0.5rem;
+                }
+
+                .department-doctors {
+                  display: none;
+                  margin-top: -15px;
+                  border-top-left-radius: 0;
+                  border-top-right-radius: 0;
+                }
+
+                .department-container {
+                  margin-bottom: 1.5rem;
+                }
+
+                .doctor-card {
+                  transition: transform 0.3s;
+                }
+
+                .doctor-card:hover {
+                  transform: translateY(-5px);
+                }
+
+                .department-card {
+                  border-bottom-left-radius: 0;
+                  border-bottom-right-radius: 0;
+                  margin-bottom: 0;
+                }
+
+                .department-doctors .card {
+                  border-top-left-radius: 0;
+                  border-top-right-radius: 0;
+                  border-top: none;
+                }
+/* .department-section end  */
+
+/* Appointment Hero */
+.appointment-hero {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+/* Cards */
+.contact-card {
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form Styles */
+#appointmentForm .form-control, 
+#appointmentForm .form-select {
+  padding: 0.75rem 1rem;
+  border: 1px solid #dee2e6;
+}
+
+#appointmentForm .form-control:focus, 
+#appointmentForm .form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* .appointment-hero end */
+
+/* Contact start */
+.contact-hero {
+  background: linear-gradient(rgba(0, 123, 255, 0.8), rgba(0, 86, 179, 0.8)), 
+              url('../images/contact-hero-bg.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+}
+
+/* Contact Info Cards */
+.contact-info-card {
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+}
+
+.contact-info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Contact Form */
+#contactForm .form-control, 
+#contactForm .form-select {
+  padding: 0.75rem 1rem;
+  border: 1px solid #dee2e6;
+}
+
+#contactForm .form-control:focus, 
+#contactForm .form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Contact Map */
+.contact-map-container {
+  border: 1px solid #dee2e6;
+  padding: 1.5rem;
+}
+
+/* Emergency CTA */
+.emergency-cta {
+  background: linear-gradient(rgba(220, 53, 69, 0.9), rgba(220, 53, 69, 0.9));
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .contact-hero {
+    padding: 3rem 0;
+  }
+  
+  .contact-info-card {
+    margin-bottom: 1rem;
+  }
+}
+/* contact sention end */
+
+
+
+
+/* Login Section */
+.login-section {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+}
+
+/* Login Card */
+.card {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+/* Form Styles */
+#loginForm .form-control {
+  padding: 0.75rem 1rem;
+  transition: all 0.3s ease;
+}
+
+#loginForm .form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Toggle Password Button */
+.toggle-password {
+  border-left: 0;
+}
+
+/* Social Login Buttons */
+.social-login {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .card-body {
+    padding: 2rem !important;
+  }
+}
+
+/* login end */
+
+/* footer */
+.footer .row a {
+  text-decoration: none;
+}
+
+.container .row .d-flex a {
+  margin: 4px;
+}
+.hero-section {
+  background: linear-gradient(rgba(255,255,255,0.9), url('../images/hero-bg.jpg');
+  background-size: cover;
+}
+.scrolling-text {
+  animation: scrollText 15s linear infinite;
+}
+@keyframes scrollText {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}

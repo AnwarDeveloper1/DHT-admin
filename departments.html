@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Medical Departments</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top py-3">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <i class="fas fa-hospital me-2" aria-hidden="true"></i>
+          <span>Doctors Hospital</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="doctors.html">Doctors</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="departments.html"
+                aria-current="page"
+                >Departments</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="appointment.html">Appointment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a class="btn btn-outline-light" href="login.html">
+                <i class="fas fa-sign-in-alt me-1" aria-hidden="true"></i> Login
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Hero Banner -->
+      <section class="department-hero position-relative">
+        <img
+          src="../assets/images/header-page.jpg"
+          alt="Doctors Hospital Timergara Departments"
+          class="img-fluid w-100"
+          style="height: 300px; object-fit: cover"
+        />
+        <div class="hero-overlay d-flex align-items-center">
+          <div class="container text-center text-white">
+            <h1 class="display-5 fw-bold mb-3">Our Medical Departments</h1>
+            <p class="lead">Specialized care for all your healthcare needs</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Departments Section -->
+      <section class="departments-section py-5 bg-light">
+        <div class="container">
+          <div class="text-center mb-5">
+            <div
+              class="badge bg-primary text-white fs-5 rounded-pill px-4 py-2 mb-3"
+            >
+              Specialized Care
+            </div>
+            <h2 class="mb-3">Comprehensive Healthcare Services</h2>
+            <p class="lead text-muted">
+              Explore our specialized medical departments
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Cardiology -->
+            <div class="col-lg-4 col-md-6">
+              <div class="department-container">
+                <div class="card department-card h-100 border-0 shadow-sm">
+                  <div class="card-body p-4 text-center">
+                    <div class="icon-circle bg-primary text-white mb-4 mx-auto">
+                      <i class="fas fa-heartbeat fa-2x"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Cardiology</h3>
+                    <p class="mb-4">
+                      Comprehensive heart care with advanced diagnostic tools
+                      and treatment procedures. Our cardiologists specialize in
+                      preventing, diagnosing, and treating heart diseases.
+                    </p>
+                    <button
+                      class="btn btn-outline-primary learn-more-btn"
+                      data-dept="cardiology"
+                    >
+                      <i class="fas fa-plus me-2"></i>Learn More
+                    </button>
+                  </div>
+                </div>
+                <!-- Doctors for Cardiology -->
+                <div
+                  class="department-doctors card border-0 shadow-sm"
+                  id="cardiology-doctors"
+                >
+                  <div class="card-body p-4">
+                    <h4 class="text-center mb-4">Our Cardiology Specialists</h4>
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <div class="card doctor-card h-100 border-0 shadow-sm">
+                          <div class="card-body p-4">
+                            <div class="text-center mb-3">
+                              <img
+                                src="../assets/images/Doctor-8.webp"
+                                alt="Dr. Muhammad Ilyas"
+                                class="doctor-modal-img"
+                              />
+                            </div>
+                            <h5 class="text-center mb-2">Dr. Muhammad Ilyas</h5>
+                            <p class="text-muted text-center mb-3">
+                              Cardiologist
+                            </p>
+                            <div class="text-center mb-3">
+                              <span class="badge bg-primary doctor-badge"
+                                >MBBS</span
+                              >
+                              <span class="badge bg-success doctor-badge"
+                                >10+ Years</span
+                              >
+                            </div>
+                            <p class="mb-3">
+                              Specializes in interventional cardiology and heart
+                              failure management.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                              <a
+                                href="appointment.html?doctor=1"
+                                class="btn btn-primary btn-sm me-2"
+                              >
+                                <i class="fas fa-calendar-check me-1"></i>Book
+                              </a>
+                              <button
+                                class="btn btn-outline-primary btn-sm view-profile"
+                                data-doctor="1"
+                              >
+                                <i class="fas fa-user me-1"></i>Profile
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card doctor-card h-100 border-0 shadow-sm">
+                          <div class="card-body p-4">
+                            <div class="text-center mb-3">
+                              <img
+                                src="../assets/images/Doctor-9.jpeg"
+                                alt="Dr.ghulam farooq"
+                                class="doctor-modal-img"
+                              />
+                            </div>
+                            <h5 class="text-center mb-2">Dr.ghulam farooq</h5>
+                            <p class="text-muted text-center mb-3">
+                              Cardiac Surgeon
+                            </p>
+                            <div class="text-center mb-3">
+                              <span class="badge bg-primary doctor-badge"
+                                >FCPS</span
+                              >
+                              <span class="badge bg-success doctor-badge"
+                                >12+ Years</span
+                              >
+                            </div>
+                            <p class="mb-3">
+                              Export in Coronary artery bypass and valve
+                              replacement surgeries.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                              <a
+                                href="appointment.html?doctor=2"
+                                class="btn btn-primary btn-sm me-2"
+                              >
+                                <i class="fas fa-calendar-check me-1"></i>Book
+                              </a>
+                              <button
+                                class="btn btn-outline-primary btn-sm view-profile"
+                                data-doctor="2"
+                              >
+                                <i class="fas fa-user me-1"></i>Profile
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pulmonary -->
+            <div class="col-lg-4 col-md-6">
+              <div class="department-container">
+                <div class="card department-card h-100 border-0 shadow-sm">
+                  <div class="card-body p-4 text-center">
+                    <div class="icon-circle bg-primary text-white mb-4 mx-auto">
+                      <i class="fas fa-lungs fa-2x"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Pulmonary</h3>
+                    <p class="mb-4">
+                      Specialized care for respiratory conditions including
+                      asthma, COPD, and lung infections. Our pulmonologists help
+                      you breathe easier and improve lung function.
+                    </p>
+                    <button
+                      class="btn btn-outline-primary learn-more-btn"
+                      data-dept="pulmonary"
+                    >
+                      <i class="fas fa-plus me-2"></i>Learn More
+                    </button>
+                  </div>
+                </div>
+                <!-- Doctors for Pulmonary -->
+                <div
+                  class="department-doctors card border-0 shadow-sm"
+                  id="pulmonary-doctors"
+                >
+                  <div class="card-body p-4">
+                    <h4 class="text-center mb-4">Our Pulmonary Specialists</h4>
+                    <div class="row g-3">
+                      <div class="col-md-12">
+                        <div class="card doctor-card h-100 border-0 shadow-sm">
+                          <div class="card-body p-4">
+                            <div class="text-center mb-3">
+                              <img
+                                src="../assets/images/Doctor-11.webp"
+                                alt="Prof. Dr. Khawar Abbas"
+                                class="doctor-modal-img"
+                              />
+                            </div>
+                            <h5 class="text-center mb-2">
+                              Prof. Dr. Khawar Abbas
+                            </h5>
+                            <p class="text-muted text-center mb-3">
+                              Pulmonologist
+                            </p>
+                            <div class="text-center mb-3">
+                              <span class="badge bg-primary doctor-badge"
+                                >MD</span
+                              >
+                              <span class="badge bg-success doctor-badge"
+                                >25+ Years</span
+                              >
+                            </div>
+                            <p class="mb-3">
+                              Specializes in sleep medicine and critical care
+                              pulmonology.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                              <a
+                                href="appointment.html?doctor=3"
+                                class="btn btn-primary btn-sm me-2"
+                              >
+                                <i class="fas fa-calendar-check me-1"></i>Book
+                              </a>
+                              <button
+                                class="btn btn-outline-primary btn-sm view-profile"
+                                data-doctor="3"
+                              >
+                                <i class="fas fa-user me-1"></i>Profile
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Neurology -->
+            <div class="col-lg-4 col-md-6">
+              <div class="department-container">
+                <div class="card department-card h-100 border-0 shadow-sm">
+                  <div class="card-body p-4 text-center">
+                    <div class="icon-circle bg-primary text-white mb-4 mx-auto">
+                      <i class="fas fa-brain fa-2x"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Neurology</h3>
+                    <p class="mb-4">
+                      Expert care for disorders of the brain, spinal cord, and
+                      nervous system. We treat conditions like epilepsy, stroke,
+                      migraines, and neurodegenerative diseases.
+                    </p>
+                    <button
+                      class="btn btn-outline-primary learn-more-btn"
+                      data-dept="neurology"
+                    >
+                      <i class="fas fa-plus me-2"></i>Learn More
+                    </button>
+                  </div>
+                </div>
+                <!-- Doctors for Neurology -->
+                <div
+                  class="department-doctors card border-0 shadow-sm"
+                  id="neurology-doctors"
+                >
+                  <div class="card-body p-4">
+                    <h4 class="text-center mb-4">Our Neurology Specialists</h4>
+                    <div class="row g-3">
+                      <div class="col-md-12">
+                        <div class="card doctor-card h-100 border-0 shadow-sm">
+                          <div class="card-body p-4">
+                            <div class="text-center mb-3">
+                              <img
+                                src="../assets/images/Doctor-4.png"
+                                alt="Dr Hanif ullah khan "
+                                class="doctor-modal-img"
+                              />
+                            </div>
+                            <h5 class="text-center mb-2">Dr. Anwar Ullah</h5>
+                            <p class="text-muted text-center mb-3">
+                              Neurologist
+                            </p>
+                            <div class="text-center mb-3">
+                              <span class="badge bg-primary doctor-badge"
+                                >MBBS</span
+                              >
+                              <span class="badge bg-success doctor-badge"
+                                >8+ Years</span
+                              >
+                            </div>
+                            <p class="mb-3">
+                              Specializes in stroke management and epilepsy
+                              treatment.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                              <a
+                                href="appointment.html?doctor=4"
+                                class="btn btn-primary btn-sm me-2"
+                              >
+                                <i class="fas fa-calendar-check me-1"></i>Book
+                              </a>
+                              <button
+                                class="btn btn-outline-primary btn-sm view-profile"
+                                data-doctor="4"
+                              >
+                                <i class="fas fa-user me-1"></i>Profile
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Orthopedics -->
+            <div class="col-lg-4 col-md-6">
+              <div class="department-container">
+                <div class="card department-card h-100 border-0 shadow-sm">
+                  <div class="card-body p-4 text-center">
+                    <div class="icon-circle bg-primary text-white mb-4 mx-auto">
+                      <i class="fas fa-bone fa-2x"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Orthopedics</h3>
+                    <p class="mb-4">
+                      Comprehensive musculoskeletal care including joint
+                      replacements and sports medicine. Our orthopedic
+                      specialists help restore mobility and relieve pain.
+                    </p>
+                    <button
+                      class="btn btn-outline-primary learn-more-btn"
+                      data-dept="orthopedics"
+                    >
+                      <i class="fas fa-plus me-2"></i>Learn More
+                    </button>
+                  </div>
+                </div>
+                <!-- Doctors for Orthopedics -->
+                <div
+                  class="department-doctors card border-0 shadow-sm"
+                  id="orthopedics-doctors"
+                >
+                  <div class="card-body p-4">
+                    <h4 class="text-center mb-4">
+                      Our Orthopedics Specialists
+                    </h4>
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <div class="card doctor-card h-100 border-0 shadow-sm">
+                          <div class="card-body p-4">
+                            <div class="text-center mb-3">
+                              <img
+                                src="../assets/images/Doctor-5.png"
+                                alt="Dr. Islam Hussain"
+                                class="doctor-modal-img"
+                              />
+                            </div>
+                            <h5 class="text-center mb-2">Dr. Islam Hussain</h5>
+                            <p class="text-muted text-center mb-3">
+                              Orthopedic Surgeon
+                            </p>
+                            <div class="text-center mb-3">
+                              <span class="badge bg-primary doctor-badge"
+                                >FRCS</span
+                              >
+                              <span class="badge bg-success doctor-badge"
+                                >10+ Years</span
+                              >
+                            </div>
+                            <p class="mb-3">
+                              Specializes in joint replacements and arthroscopic
+                              surgery.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                              <a
+                                href="appointment.html?doctor=5"
+                                class="btn btn-primary btn-sm me-2"
+                              >
+                                <i class="fas fa-calendar-check me-1"></i>Book
+                              </a>
+                              <button
+                                class="btn btn-outline-primary btn-sm view-profile"
+                                data-doctor="5"
+                              >
+                                <i class="fas fa-user me-1"></i>Profile
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card doctor-card h-100 border-0 shadow-sm">
+                          <div class="card-body p-4">
+                            <div class="text-center mb-3">
+                              <img
+                                src="../assets/images/Dental.png"
+                                alt="Dr. Sanaullah"
+                                class="doctor-modal-img"
+                              />
+                            </div>
+                            <h5 class="text-center mb-2">Dr. Sanaullah</h5>
+                            <p class="text-muted text-center mb-3">
+                              Sports Medicine
+                            </p>
+                            <div class="text-center mb-3">
+                              <span class="badge bg-primary doctor-badge"
+                                >MD</span
+                              >
+                              <span class="badge bg-success doctor-badge"
+                                >7+ Years</span
+                              >
+                            </div>
+                            <p class="mb-3">
+                              Expert in sports injuries and rehabilitation.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                              <a
+                                href="appointment.html?doctor=6"
+                                class="btn btn-primary btn-sm me-2"
+                              >
+                                <i class="fas fa-calendar-check me-1"></i>Book
+                              </a>
+                              <button
+                                class="btn btn-outline-primary btn-sm view-profile"
+                                data-doctor="6"
+                              >
+                                <i class="fas fa-user me-1"></i>Profile
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dental Surgery -->
+            <div class="col-lg-4 col-md-6">
+              <div class="department-container">
+                <div class="card department-card h-100 border-0 shadow-sm">
+                  <div class="card-body p-4 text-center">
+                    <div class="icon-circle bg-primary text-white mb-4 mx-auto">
+                      <i class="fas fa-tooth fa-2x"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Dental Surgery</h3>
+                    <p class="mb-4">
+                      Advanced oral care including implants, extractions, and
+                      cosmetic dentistry. Our dental surgeons provide pain-free
+                      treatments with modern techniques.
+                    </p>
+                    <button
+                      class="btn btn-outline-primary learn-more-btn"
+                      data-dept="dental"
+                    >
+                      <i class="fas fa-plus me-2"></i>Learn More
+                    </button>
+                  </div>
+                </div>
+                <!-- Doctors for Dental -->
+                <div
+                  class="department-doctors card border-0 shadow-sm"
+                  id="dental-doctors"
+                >
+                  <div class="card-body p-4">
+                    <h4 class="text-center mb-4">Our Dental Specialists</h4>
+                    <div class="row g-3">
+                      <div class="col-md-12">
+                        <div class="card doctor-card h-100 border-0 shadow-sm">
+                          <div class="card-body p-4">
+                            <div class="text-center mb-3">
+                              <img
+                                src="../assets/images/Doctor-6.png"
+                                alt="Dr. Zainab Khan"
+                                class="doctor-modal-img"
+                              />
+                            </div>
+                            <h5 class="text-center mb-2">
+                              Dr. Irfan Ullah Shah
+                            </h5>
+                            <p class="text-muted text-center mb-3">
+                              Dental Surgeon
+                            </p>
+                            <div class="text-center mb-3">
+                              <span class="badge bg-primary doctor-badge"
+                                >BDS</span
+                              >
+                              <span class="badge bg-success doctor-badge"
+                                >5+ Years</span
+                              >
+                            </div>
+                            <p class="mb-3">
+                              Specializes in cosmetic dentistry and dental
+                              implants.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                              <a
+                                href="appointment.html?doctor=7"
+                                class="btn btn-primary btn-sm me-2"
+                              >
+                                <i class="fas fa-calendar-check me-1"></i>Book
+                              </a>
+                              <button
+                                class="btn btn-outline-primary btn-sm view-profile"
+                                data-doctor="7"
+                              >
+                                <i class="fas fa-user me-1"></i>Profile
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Laboratory -->
+            <div class="col-lg-4 col-md-6">
+              <div class="department-container">
+                <div class="card department-card h-100 border-0 shadow-sm">
+                  <div class="card-body p-4 text-center">
+                    <div class="icon-circle bg-primary text-white mb-4 mx-auto">
+                      <i class="fas fa-vials fa-2x"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Laboratory</h3>
+                    <p class="mb-4">
+                      State-of-the-art diagnostic testing with accurate, timely
+                      results. Our lab offers complete pathology, microbiology,
+                      and biochemistry services.
+                    </p>
+                    <button
+                      class="btn btn-outline-primary learn-more-btn"
+                      data-dept="laboratory"
+                    >
+                      <i class="fas fa-plus me-2"></i>Learn More
+                    </button>
+                  </div>
+                </div>
+                <!-- Doctors for Laboratory -->
+                <div
+                  class="department-doctors card border-0 shadow-sm"
+                  id="laboratory-doctors"
+                >
+                  <div class="card-body p-4">
+                    <h4 class="text-center mb-4">Our Lab Specialists</h4>
+                    <div class="row g-3">
+                      <div class="col-md-12">
+                        <div class="card doctor-card h-100 border-0 shadow-sm">
+                          <div class="card-body p-4">
+                            <div class="text-center mb-3">
+                              <img
+                                src="../assets/images/doctors/doctor8.jpg"
+                                alt="Dr. Haroon Shah"
+                                class="doctor-modal-img"
+                              />
+                            </div>
+                            <h5 class="text-center mb-2">Dr. Haroon Shah</h5>
+                            <p class="text-muted text-center mb-3">
+                              Pathologist
+                            </p>
+                            <div class="text-center mb-3">
+                              <span class="badge bg-primary doctor-badge"
+                                >MD</span
+                              >
+                              <span class="badge bg-success doctor-badge"
+                                >12+ Years</span
+                              >
+                            </div>
+                            <p class="mb-3">
+                              Specializes in clinical pathology and laboratory
+                              medicine.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                              <a
+                                href="appointment.html?doctor=8"
+                                class="btn btn-primary btn-sm me-2"
+                              >
+                                <i class="fas fa-calendar-check me-1"></i>Book
+                              </a>
+                              <button
+                                class="btn btn-outline-primary btn-sm view-profile"
+                                data-doctor="8"
+                              >
+                                <i class="fas fa-user me-1"></i>Profile
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Doctor Profile Modal -->
+      <div class="modal fade" id="doctorModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="doctorModalLabel">Doctor Profile</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-4 text-center">
+                  <img
+                    id="modalDoctorImg"
+                    src=""
+                    alt="Doctor"
+                    class="doctor-modal-img mb-3"
+                  />
+                  <h4 id="modalDoctorName"></h4>
+                  <p class="text-muted" id="modalDoctorTitle"></p>
+                  <div id="modalDoctorBadges"></div>
+                </div>
+                <div class="col-md-8">
+                  <h5>About</h5>
+                  <p id="modalDoctorBio"></p>
+
+                  <h5 class="mt-4">Education</h5>
+                  <ul id="modalDoctorEducation" class="list-unstyled">
+                    <!-- Filled by JavaScript -->
+                  </ul>
+
+                  <h5 class="mt-4">Specializations</h5>
+                  <div id="modalDoctorSpecializations"></div>
+
+                  <h5 class="mt-4">Availability</h5>
+                  <p id="modalDoctorAvailability"></p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#" id="modalBookBtn" class="btn btn-primary">
+                <i class="fas fa-calendar-check me-1"></i> Book Appointment
+              </a>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <section class="cta-section py-5 bg-primary text-white">
+        <div class="container text-center">
+          <h2 class="mb-4">Need Specialized Care?</h2>
+          <p class="lead mb-4">
+            Our expert teams are ready to provide you with the best medical
+            treatment
+          </p>
+          <div class="d-flex justify-content-center gap-3">
+            <a href="appointment.html" class="btn btn-light btn-lg px-4">
+              <i class="fas fa-calendar-check me-2"></i>Book Appointment
+            </a>
+            <a href="contact.html" class="btn btn-outline-light btn-lg px-4">
+              <i class="fas fa-phone-alt me-2"></i>Contact Us
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light pt-5">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-4 col-md-6">
+            <h3 class="text-light mb-4">
+              <i class="fas fa-hospital me-2"></i>Doctors Hospital
+            </h3>
+            <p class="mb-4">
+              Providing quality healthcare services to the Timergara community
+              with compassion and medical excellence.
+            </p>
+            <div class="d-flex pt-2 gap-2">
+              <a
+                class="btn btn-outline-light btn-social rounded-circle"
+                href="#"
+                aria-label="Twitter"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                class="btn btn-outline-light btn-social rounded-circle"
+                href="#"
+                aria-label="Facebook"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                class="btn btn-outline-light btn-social rounded-circle"
+                href="#"
+                aria-label="YouTube"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a
+                class="btn btn-outline-light btn-social rounded-circle"
+                href="#"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <h5 class="text-light mb-4">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="index.html" class="text-light text-decoration-none"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="doctors.html" class="text-light text-decoration-none"
+                  >Doctors</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="departments.html"
+                  class="text-light text-decoration-none"
+                  >Departments</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="appointment.html"
+                  class="text-light text-decoration-none"
+                  >Appointments</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="text-light text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Services</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-light text-decoration-none"
+                  >Cardiology</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-light text-decoration-none"
+                  >Neurology</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-light text-decoration-none"
+                  >Orthopedics</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-light text-decoration-none"
+                  >Pediatrics</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Emergency Care</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Contact</h5>
+            <p class="mb-2">
+              <i class="fas fa-map-marker-alt me-2"></i>Timergara, Lower Dir,
+              KPK, Pakistan
+            </p>
+            <p class="mb-2"><i class="fas fa-phone-alt me-2"></i>0945-821666</p>
+            <p class="mb-2">
+              <i class="fas fa-envelope me-2"></i>info@doctorstimergara.com
+            </p>
+            <h6 class="mt-4 mb-2">Opening Hours</h6>
+            <p class="mb-1">Monday-Friday: 8:00 AM - 8:00 PM</p>
+            <p>Emergency: 24/7</p>
+          </div>
+        </div>
+      </div>
+      <div class="container py-4 border-top border-secondary">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            &copy; <span class="copyright-year"></span>
+            <a class="text-light text-decoration-none" href="index.html"
+              >Doctors Hospital Timergara</a
+            >. All Rights Reserved.
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="#" class="text-light text-decoration-none me-3"
+              >Privacy Policy</a
+            >
+            <a href="#" class="text-light text-decoration-none"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/department.js"></script>
+  </body>
+</html>
